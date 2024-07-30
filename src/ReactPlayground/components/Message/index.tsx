@@ -11,6 +11,7 @@ export interface MessageProps {
 export const Message: React.FC<MessageProps> = (props) => {
   const { type, content } = props;
   const [visible, setVisible] = useState(false);
+  console.log('content', visible);
 
   useEffect(() => {
     setVisible(!!content);

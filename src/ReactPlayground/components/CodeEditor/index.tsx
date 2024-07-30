@@ -10,8 +10,6 @@ export default function CodeEditor() {
 
   const file = files[selectedFileName];
   function onEditorChange(value?: string) {
-    console.log('0000');
-
     files[selectedFileName].value = value!;
     setFiles({ ...files });
   }
